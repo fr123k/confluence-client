@@ -1,0 +1,6 @@
+confluence:
+  url: https://xxxxxxx.atlassian.net/wiki
+  username: jane.doe@example.com
+  token: thios is a vert secret api token
+
+debug: true
