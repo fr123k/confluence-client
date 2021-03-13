@@ -79,7 +79,7 @@ func (c *ConfluenceClient) GetPage(id, expand string) (results *ConfluencePage) 
 //CQLSearchPagesBy searches for pages in the space that meet the specified criteria
 func (c *ConfluenceClient) SearchPagesByCQL(cql, expand string) (results *ConfluencePagesSearch) {
     results = &ConfluencePagesSearch{}
-    c.doRequest("GET", "/rest/api/search?limit=5&cql="+url.QueryEscape(cql)+"&expand=" + url.QueryEscape(expand), nil, &ConfluencePagesSearch{})
+    c.doRequest("GET", "/rest/api/search?limit=5&cql="+url.QueryEscape(cql)+"&expand=" + url.QueryEscape(expand), nil, results)
     return results
 }
 
